@@ -13,17 +13,17 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-getData(app, "/projects", projects);
+getData(app, "/api/projects", projects);
 
-getDataById(app, "/projects/:id", projects);
+getDataById(app, "/api/projects/:id", projects);
 
-getData(app, "/popular-films", popularFilms);
+getData(app, "/api/popular-films", popularFilms);
 
-getData(app, "/films", films);
+getData(app, "/api/films", films);
 
-getData(app, "/tv-shows", tvShows);
+getData(app, "/api/tv-shows", tvShows);
 
-getData(app, "/newest-films", newestFilms);
+getData(app, "/api/newest-films", newestFilms);
 
 app.get("/", (req, res) => {
   res.send(`
@@ -32,22 +32,22 @@ app.get("/", (req, res) => {
       <p style="font-size: 25px">Available Categories:</p>
       <ul style="font-size: 20px">
         <li>
-          <a href="/projects">projects</a>
+          <a href="/api/projects">projects</a>
         </li>
         <li>
-          <a href="/projects/:id">projects:id</a>
+          <a href="/api/projects/:id">projects:id</a>
         </li>
         <li>
-          <a href="/popular-films">popular-films</a>
+          <a href="/api/popular-films">popular-films</a>
         </li>
         <li>
-          <a href="/films">films</a>
+          <a href="/api/films">films</a>
         </li>
         <li>
-          <a href="/tv-shows">tv-shows</a>
+          <a href="/api/tv-shows">tv-shows</a>
         </li>
         <li>
-          <a href="/newest-films">newest-films</a>
+          <a href="/api/newest-films">newest-films</a>
         </li>
         </ul>
     </div>
