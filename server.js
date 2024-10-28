@@ -13,17 +13,17 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-getData(app, "/api/projects", projects);
+getData(app, "/projects", projects);
 
-getDataById(app, "/api/projects/:id", projects);
+getDataById(app, "/projects/:id", projects);
 
-getData(app, "/api/popular-films", popularFilms);
+getData(app, "/popular-films", popularFilms);
 
-getData(app, "/api/films", films);
+getData(app, "/films", films);
 
-getData(app, "/api/tv-shows", tvShows);
+getData(app, "/tv-shows", tvShows);
 
-getData(app, "/api/newest-films", newestFilms);
+getData(app, "/newest-films", newestFilms);
 
 app.get("/", (req, res) => {
   res.send(`
