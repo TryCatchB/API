@@ -32,22 +32,22 @@ app.get("/", (req, res) => {
       <p style="font-size: 25px">Available Categories:</p>
       <ul style="font-size: 20px">
         <li>
-          <a href="/api/projects">projects</a>
+          <a href="/projects">projects</a>
         </li>
         <li>
-          <a href="/api/projects/:id">projects:id</a>
+          <a href="/projects/:id">projects:id</a>
         </li>
         <li>
-          <a href="/api/popular-films">popular-films</a>
+          <a href="/popular-films">popular-films</a>
         </li>
         <li>
-          <a href="/api/films">films</a>
+          <a href="/films">films</a>
         </li>
         <li>
-          <a href="/api/tv-shows">tv-shows</a>
+          <a href="/tv-shows">tv-shows</a>
         </li>
         <li>
-          <a href="/api/newest-films">newest-films</a>
+          <a href="/newest-films">newest-films</a>
         </li>
         </ul>
     </div>
